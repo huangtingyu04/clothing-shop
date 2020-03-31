@@ -38,9 +38,9 @@
           <button class="btn" type="submit">Sign in</button>
         </div>
         <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="profile-tab">
-         <input class="formInput" type="email" id="inputEmail" placeholder="Email address" required>
-          <input class="formInput" type="password" id="inputPassword" placeholder="Password" required>
-           <input class="formInput mb-5" type="password" id="inputPassword" placeholder="Confirm password again" required>
+         <input class="formInput" type="email" id="inputEmailRegister" placeholder="Email address" required>
+          <input class="formInput" type="password" id="inputPasswordRegister" placeholder="Password" required>
+           <input class="formInput mb-5" type="password" id="confirmPassword" placeholder="Confirm password again" required>
           <button class="btn" type="submit">Register</button>
         </div>
       </div>

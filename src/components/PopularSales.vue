@@ -60,8 +60,6 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        
-          bulletClass : 'my-bullet'
         },
         breakpoints: {
           544: {
@@ -136,7 +134,7 @@ export default {
     display: inline-block;
     border-bottom: 3px solid #717fe0;
     padding-bottom: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .swiper-pagination {
     position: absolute;
@@ -144,7 +142,7 @@ export default {
     left: 0;
     right: 0;
     border: 1px solid blue;
-    .my-bullet {
+    .swiper-pagination-bullet {
       border: 1px solid red;
       width: 16px;
       height: 16px;
