@@ -163,6 +163,7 @@ export default {
     color: #fff;
     margin-bottom: 45px;
     transition: .4s;
+    box-shadow: none; 
     &:hover {
       border-color: #222;
       background-color: #222;
