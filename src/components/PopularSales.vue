@@ -126,7 +126,6 @@ export default {
 .products-display {
   position: relative;
   padding-bottom: 80px;
-  border: 1px solid red;
   .swiper-title {
     color: #333;
     font-size: 30px;
@@ -135,25 +134,6 @@ export default {
     border-bottom: 3px solid #717fe0;
     padding-bottom: 3px;
     margin-bottom: 20px;
-  }
-  .swiper-pagination {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    border: 1px solid blue;
-    .swiper-pagination-bullet {
-      border: 1px solid red;
-      width: 16px;
-      height: 16px;
-      background-color: #c1170c;
-      margin-left: 8px;
-      margin-right: 8px;
-      @media (max-width: 767px) {
-        margin-left: 4px;
-        margin-right: 4px;
-      }
-    }
   }
   .product-picture-outer {
     overflow: hidden;
