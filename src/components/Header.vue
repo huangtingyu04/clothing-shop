@@ -37,7 +37,7 @@
               <li class="nav-item ml-1 my-1">
                 <router-link to="/cart" class="nav-link">
                   <i class="fas fa-shopping-cart"></i>
-                  <span class="badge badge-pill badge-danger">50</span>
+                  <span class="badge badge-pill badge-danger">{{ cart.length }}</span>
                 </router-link>
               </li>
               <li class="nav-item m-1">
@@ -63,6 +63,7 @@ export default {
       widthX: false,
       isNavbarChange: false,
       isShow: false,
+      cart: [],
     }
   },
   methods: {
@@ -71,9 +72,21 @@ export default {
       this.widthX = window.innerWidth >= 992
       this.isNavbarChange = this.scrollY && this.widthX
     },
+    getCart() {
+      const vm = this;
+      const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/cart`;
+      this.$http.get(url).then((response) => {
+        vm.cart = response.data.data.carts;
+      });
+    },
   },
   created () {
+    const vm = this
     this.handleView()
+    this.getCart()
+    vm.$bus.$on('updateCart', () => {
+      vm.getCart()
+    })
     window.addEventListener('scroll', this.handleView)
     window.addEventListener('resize', this.handleView)
   }
@@ -102,6 +115,9 @@ export default {
  }
  i {
    font-size: 18px;
+ }
+ .badge {
+   font-size: 14px;
  }
 }
 .navbar.narbar-color {

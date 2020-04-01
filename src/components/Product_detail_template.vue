@@ -1,5 +1,6 @@
 <template>
   <div class="product-detail">
+    <loading :active.sync="isLoading"></loading>
     <div class="container">
       <div class="row">
         <div class="col-lg-5">
@@ -51,21 +52,29 @@
 import $ from 'jquery'
 export default {
   props: ['productItem'],
+  data() {
+    return {
+      isLoading: false,
+      cart: {},
+    }
+  },
   methods: {
     addtoCard(id, qty = 1) {
       const vm = this
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/cart`;
-      // vm.status.loadingItem = id;
+      vm.isLoading = true;
       const cart = {
         product_id: id,
         qty,
       };
       this.$http.post(url, { data: cart }).then((response) => {
         console.log(response);
-        // vm.status.loadingItem = '';
+        vm.isLoading = false;
+        vm.$bus.$emit('updateCart')
         $('#productModal').modal('hide');
+        vm.$bus.$emit('messsage:pushCart', response.data.message, 'success')
       });
-    }
+    },
   }
 }
 </script>
