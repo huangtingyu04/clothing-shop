@@ -36,11 +36,11 @@
           <div class="product-sales">
             <p> 
               <i class="far fa-grin-alt"></i>
-              首次購物結帳時享95折優惠! ! !
+              首次購物結帳時輸入1234，享9折優惠! ! !
             </p>
             <p>
               <i class="far fa-grin-alt"></i>
-              當月壽星結帳時立即折 $50 元
+              當月壽星結帳時輸入5678，享8折優惠! ! !
             </p>
           </div>
         </div>

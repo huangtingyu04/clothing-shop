@@ -5,10 +5,10 @@
         <h5>summer sale</h5>
       </div>
       <div class="txt1 animated">
-        <p>首次購物結帳時享95折優惠! ! !</p>
+        <p>首次購物結帳時輸入1234，享9折優惠! ! !</p>
       </div>
       <div class="txt2 animated">
-        <p>當月壽星結帳時立即折 $50 元</p>
+        <p>當月壽星結帳時輸入5678，享8折優惠! ! !</p>
       </div>
     </div>
   </div>
