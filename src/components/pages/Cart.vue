@@ -45,7 +45,9 @@
               <button class="btn coupon-btn" @click="addCouponCode">apply coupon</button>
             </div>
             <div>
-              <button class="btn check-btn">Proceed to Checkout</button>
+              <router-link to="/cart_address">
+                <button class="btn check-btn">Proceed to Checkout</button>
+              </router-link>
             </div>
           </div>
         </div>

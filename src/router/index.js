@@ -14,6 +14,9 @@ import HomeRouter from '@/components/HomeRouter';//進入點
 import Home from '@/components/pages/Home';
 import List from '@/components/pages/List';
 import Product_detail from '@/components/pages/Product_detail';
+import Cart_address from '@/components/pages/Cart_address';
+import Cart_pay from '@/components/pages/Cart_pay';
+import Cart_finished from '@/components/pages/Cart_finished';
 
 Vue.use(Router)
 
@@ -55,6 +58,21 @@ export default new Router({
           path: 'cart',
           name: 'Cart',
           component: Cart
+        },
+        {
+          path: 'cart_address',
+          name: 'Cart_address',
+          component: Cart_address
+        },
+        {
+          path: 'cart_pay/:orderId',
+          name: 'Cart_pay',
+          component: Cart_pay
+        },
+        {
+          path: 'cart_finished',
+          name: 'Cart_finished',
+          component: Cart_finished
         }
       ]
     },
