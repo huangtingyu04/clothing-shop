@@ -7,8 +7,7 @@ import Cart from '@/components/pages/Cart'//
 import Products from '@/components/pages/Products'
 import Coupons from '@/components/pages/Coupons';
 import Orders from '@/components/pages/Orders';
-import CustomerOrder from '@/components/pages/CustomerOrders';
-import CustomerCheckout from '@/components/pages/CustomerCheckout';
+
 
 import HomeRouter from '@/components/HomeRouter';//進入點
 import Home from '@/components/pages/Home';
@@ -114,23 +113,6 @@ export default new Router({
         },
       ]
     },
-    {
-      path: '/',
-      name: 'Dashboard',
-      component: Dashboard,
-      children: [
-        {
-          path: 'customer_order',
-          name: 'CustomerOrder',
-          component: CustomerOrder,
-        },
-        {
-          path: 'customer_checkout/:orderId',
-          name: 'CustomerCheckout',
-          component: CustomerCheckout,
-        }
-      ]
 
-    },
   ]
 })
