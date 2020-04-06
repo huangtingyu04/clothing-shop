@@ -87,7 +87,6 @@ export default {
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/products/all`
       vm.isLoading = true
       this.$http.get(url).then((response) => {
-        console.log(response.data.products)
         vm.allproducts = response.data.products
         vm.isLoading = false
       })

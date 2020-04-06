@@ -214,10 +214,8 @@ export default {
     getProducts(page = 1) {
       const api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/admin/products?page=${page}`
       const vm = this
-      console.log(process.env.APIPATH, process.env.CUSTOMPATH)
       vm.isLoading = true
       this.$http.get(api).then((response) => {
-       console.log(response.data)
        if (response.data.success) {
          vm.isLoading = false
          vm.products = response.data.products
@@ -247,16 +245,14 @@ export default {
         api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/admin/product/${vm.tempProduct.id}`;
         httpMethod = 'put';
       }
-      console.log(process.env.APIPATH, process.env.CUSTOMPATH);
       this.$http[httpMethod](api, { data: vm.tempProduct }).then((response) => {
-        console.log(response.data);
         if (response.data.success) {
           $('#productModal').modal('hide');
           vm.getProducts();
         } else {
           $('#productModal').modal('hide');
           vm.getProducts();
-          console.log('新增失敗');
+          alert('新增失敗');
         }
         // vm.products = response.data.products;
       });
@@ -265,14 +261,12 @@ export default {
       const vm = this
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/admin/product/${vm.tempProduct.id}`
       this.$http.delete(url).then((response) => {
-        console.log(response, vm.tempProduct);
           $('#delProductModal').modal('hide')
           vm.getProducts();
           
         })
     },
      uploadFile() {
-      console.log(this);
       const uploadedFile = this.$refs.files.files[0];
       const vm = this;
       const formData = new FormData();
@@ -284,7 +278,6 @@ export default {
           'Content-Type': 'multipart/form-data',
         },
       }).then((response) => {
-        console.log(response.data);
         vm.status.fileUploading = false
         if (response.data.success) {
           // vm.tempProduct.imageUrl = response.data.imageUrl;

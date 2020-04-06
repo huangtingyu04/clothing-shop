@@ -103,7 +103,6 @@ export default {
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/products?page=${page}`
       vm.isLoading = true
       this.$http.get(url).then((response) => {
-        console.log(response.data)
         vm.products = response.data.products
         vm.pagination = response.data.pagination
         vm.isLoading = false
@@ -114,7 +113,6 @@ export default {
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/products/all`
       vm.isLoading = true
       this.$http.get(url).then((response) => {
-        console.log(response.data.products)
         vm.allproducts = response.data.products
         vm.isLoading = false
       })
@@ -127,7 +125,6 @@ export default {
         vm.product = response.data.product
         // vm.$set(vm.product, 'number', 1)
         vm.product.num = 1
-        console.log(response.data.product)
         if (isChangedPage) vm.$router.push(`product_detail/${id}`)
         else $('#productModal').modal('show')
         vm.isLoading = false

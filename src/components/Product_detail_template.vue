@@ -68,7 +68,6 @@ export default {
         qty,
       };
       this.$http.post(url, { data: cart }).then((response) => {
-        console.log(response);
         vm.isLoading = false;
         vm.$bus.$emit('updateCart')
         $('#productModal').modal('hide');

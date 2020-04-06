@@ -90,7 +90,6 @@ export default {
       const url = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/pay/${vm.orderId}`;
       vm.isLoading = true;
       this.$http.post(url).then((response) => {
-        console.log(response);
         if (response.data.success) {
           vm.getOrder();
           vm.$bus.$emit('updateCart')

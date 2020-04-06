@@ -80,7 +80,6 @@ export default {
       vm.isLoading = true;
       this.$http.get(url).then((response) => {
         vm.cart = response.data.data;
-        console.log(1,response.data.data);
         vm.isLoading = false;
       });
     },

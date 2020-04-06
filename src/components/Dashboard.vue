@@ -19,8 +19,6 @@ export default {
     BackHeader,
     Alert
   } 
-
-
 }
 
 </script>

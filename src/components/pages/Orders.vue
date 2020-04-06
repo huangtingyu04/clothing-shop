@@ -61,7 +61,6 @@ export default {
         vm.orders = response.data.orders;
         vm.pagination = response.data.pagination;
         vm.isLoading = false;
-        console.log(response);
       });
     },
   },
@@ -81,7 +80,6 @@ export default {
   },
   created() {
     this.getOrders();
-    console.log(process.env.APIPATH);
   },
 };
 </script>
