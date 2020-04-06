@@ -1,21 +1,46 @@
 # vue-ecommerce-demo
 
-> A Vue.js project
+> 這是一個練習 Vue.js 的電商網站，主打商品為服飾類以及一些配件
 
-## Build Setup
+[Demo]()
 
-``` bash
-# install dependencies
-npm install
+## Skills
+- Vue CLI 2
+- VueRouter
+- Webpack
+- API
+- JavaScript (ES6)
+- SCSS
+- Bootstrap 4
+- RWD
+- jQuery
+- CSS3
+- HTML5
 
-# serve with hot reload at localhost:8080
-npm run dev
+## Plugins
+- [animate.css](https://github.com/daneden/animate.css)
+- [vue-awesome-swiper](http://caibaojian.com/swiper-api/)
+- [vue-loading-overlay](https://www.npmjs.com/package/vue-loading-overlay)
+- [vee-validate](https://logaretm.github.io/vee-validate/)
+- [vue-axios](https://www.npmjs.com/package/vue-axios)
 
-# build for production with minification
-npm run build
+##Introduction | 前端畫面介紹
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+#### 首頁畫面
+![首頁畫面]()
+#### 商品列表
+![商品列表]()
+#### 商品細節
+![商品細節]()
+#### 購物車
+![購物車]()
+#### 準備付款
+![準備付款]()
+#### 付款成功
+![付款成功]()
+#### 管理員登入畫面
+![管理員登入畫面]()
+#### 後台
+![後台]()
+其餘更多細節部分，歡迎至 [Demo]() 網站觀看。
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
