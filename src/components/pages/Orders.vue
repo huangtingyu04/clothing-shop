@@ -1,7 +1,7 @@
 <template>
   <div>
     <Loading :active.sync="isLoading"></Loading>
-    <table class="table mt-4">
+    <table class="table">
       <thead>
         <tr>
           <th>購買時間</th>
@@ -85,3 +85,8 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.table {
+  margin-top: 140px;
+}
+</style>

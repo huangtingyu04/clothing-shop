@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="mt-5">
     <loading :active.sync="isLoading"></loading>
-    <div class="text-right mt-4">
-        <button class="btn btn-primary" 
+    <div class="text-right">
+        <button class="btn btn-primary mt-5" 
         @click="openModal(true)">
         建立新的產品</button>
     </div>

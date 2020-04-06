@@ -1,28 +1,22 @@
 <template>
   <div>
-    <Navbar/>
+    <BackHeader />
     <Alert></Alert>
-    <div class="container-fluid">
-      <div class="row">
-        <Sidebar></Sidebar>
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <router-view></router-view>
-        </main>
+    <div class="container">
+      <div class="px-5 mx-auto">
+        <router-view></router-view>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Sidebar from './Sidebar'
-import Navbar from './Navbar'
+import BackHeader from './BackHeader'
 import Alert from './AlertMessage'
-
 
 export default {
   components: {
-    Sidebar,
-    Navbar,
+    BackHeader,
     Alert
   } 
 
