@@ -2,7 +2,7 @@
 
 > 這是一個練習 Vue.js 的電商網站，主打商品為服飾類以及一些配件
 
-[Demo]()
+[Demo](https://huangtingyu04.github.io/clothing-shop/)
 
 ## Skills
 - Vue CLI 2
@@ -42,5 +42,6 @@
 ![管理員登入畫面](https://github.com/huangtingyu04/clothing-shop/blob/master/src/assets/images/%E7%AE%A1%E7%90%86%E5%93%A1%E7%99%BB%E5%85%A5%E7%95%AB%E9%9D%A2.png)
 ### 後台
 ![後台](https://github.com/huangtingyu04/clothing-shop/blob/master/src/assets/images/%E5%BE%8C%E5%8F%B0.png)
-其餘更多細節部分，歡迎至 [Demo]() 網站觀看。
+
+其餘更多細節部分，歡迎至 [Demo](https://huangtingyu04.github.io/clothing-shop/) 網站觀看。
 
